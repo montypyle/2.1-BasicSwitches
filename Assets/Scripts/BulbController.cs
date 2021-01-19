@@ -10,13 +10,15 @@ public class BulbController : MonoBehaviour
     void Start()
     {
         bulbAnimator = gameObject.GetComponent<Animator>();
+        bulbAnimator.SetBool("Lit", false);
+
     }
 
-    void BulbOn()
+    public void BulbOn()
     {
         bulbAnimator.SetBool("Lit", true);
     }
-    void BulbOff()
+    public void BulbOff()
     {
         bulbAnimator.SetBool("Lit", false);
     }

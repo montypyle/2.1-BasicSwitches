@@ -35,9 +35,6 @@ public class ManualSwitchController : MonoBehaviour
         // Get the Animator off the game object this script is attached to as
         // we'll need it later
         switchAnimator = gameObject.GetComponent<Animator>();
-
-        
-
         // Let's turn off the switch to start with
         turnOff();
     }
@@ -56,7 +53,6 @@ public class ManualSwitchController : MonoBehaviour
         switchAnimator.SetBool("SwitchOff", switchOff);
         BulbController bulbSwitch = theBulb.GetComponent<BulbController>();
         bulbSwitch.BulbOn();
-
     }
 
     public void turnOff()

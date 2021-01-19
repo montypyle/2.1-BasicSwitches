@@ -28,11 +28,14 @@ public class ManualSwitchController : MonoBehaviour
 
     // The Awake function of each class is called before the Start function. It is
     // here you should initialise class properties/variables like those above.
+    private Animator bulbAnimator;
+    public GameObject theBulb;
     void Awake()
     {
         // Get the Animator off the game object this script is attached to as
         // we'll need it later
         switchAnimator = gameObject.GetComponent<Animator>();
+        bulbAnimator = theBulb.GetComponent<Animator>();
 
         // Let's turn off the switch to start with
         turnOff();

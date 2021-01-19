@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulbController : MonoBehaviour
 {
-    private Animator bulbAnimator;
+    public Animator bulbAnimator;
     
     // Start is called before the first frame update
     void Start()

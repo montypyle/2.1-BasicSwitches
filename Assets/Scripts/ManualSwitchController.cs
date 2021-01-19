@@ -50,6 +50,7 @@ public class ManualSwitchController : MonoBehaviour
     {
         switchOff = false;
         switchAnimator.SetBool("SwitchOff", switchOff);
+
     }
 
     public void turnOff()

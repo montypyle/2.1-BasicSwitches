@@ -9,7 +9,15 @@ public class BulbController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bulbAnimator = gameObject.GetComponent<Animator>();   
+        bulbAnimator = gameObject.GetComponent<Animator>();
     }
 
+    void BulbOn()
+    {
+        bulbAnimator.SetBool("Lit", true);
+    }
+    void BulbOff()
+    {
+        bulbAnimator.SetBool("Lit", false);
+    }
 }
